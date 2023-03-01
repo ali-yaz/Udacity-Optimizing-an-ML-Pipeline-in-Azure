@@ -25,7 +25,9 @@ Random sampling supports early termination of low-performance runs. In random sa
 Early termination policy Bandit is an early termination policy that terminates any runs where the primary metric is not within the specified slack factor with respect to the best performing training run. 
 
 ## AutoML
-**The best performing model was a model with an accuracy of aproximately 0.9177 .**
+**The best performing model was a model with an accuracy of aproximately 0.9177 .
+AutoML pipeline experimented different models, and VotingEnsemle algorithm demontrated the highest accuracy.
+**
 
 ## Pipeline comparison
 **
@@ -33,8 +35,14 @@ MaxAbsScaler LightGBM and TruncatedSVDWrapper RandomForest models showed the sam
 **
 
 ## Future work
-**In the case of scikit-learn based model, a different parameter sampler (Grid search or Bayesian search) can be used. **
+**In the case of scikit-learn based model, a different parameter sampler (Grid search or Bayesian search) can be used. 
+We also can remove the 30min time limit in AutoML run to see if algorithms can achieve higher accuracy.
+Another future work can be removing Bandit policy to see if models performance can be improved.
+**
 
 ## Proof of cluster clean up
+
+![image](https://user-images.githubusercontent.com/16668953/222142582-61035691-c238-4552-a8d3-9d54b06eceb8.png)
+
 **If you did not delete your compute cluster in the code, please complete this section. Otherwise, delete this section.**
 **Image of cluster marked for deletion**
