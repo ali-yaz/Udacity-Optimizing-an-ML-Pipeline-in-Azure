@@ -28,7 +28,9 @@ This model is then compared to an Azure AutoML run.
 **The best performing model was a model with an accuracy of aproximately 0.9177 .**
 
 ## Pipeline comparison
-**Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
+**
+MaxAbsScaler LightGBM and TruncatedSVDWrapper RandomForest models showed the same best metric, accuracy =0.9158. However, the run time is different. one tool around 30 seconds , the TruncatedSVDWrapper RandomForest took around 4 minutes to be completed. 
+**
 
 ## Future work
 **In the case of scikit-learn based model, a different parameter sampler (Grid search or Bayesian search) can be used. **
